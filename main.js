@@ -31,13 +31,13 @@ class BankAccount {
         }
     }
     credit(amount) {
-        let deduction = Math.floor(amount / 100); // Deduct $1 for each $100
-        let netAmount = amount - deduction; // Amount after deduction
+        let deduction = Math.floor(amount / 100);
+        let netAmount = amount - deduction;
         this.balance += netAmount;
         return `Successfully credited $${netAmount}. New balance is $${this.balance}.`;
     }
 }
-const customer = new Customer('John', 'Doe', 'Male', 30, '123-456-7890');
+const customer = new Customer('Ahmed', 'Khurram', 'Male', 22, '123-456-789');
 const bankAccount = new BankAccount(customer);
 import inquirer from 'inquirer';
 async function main() {

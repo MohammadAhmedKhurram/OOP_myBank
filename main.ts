@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 class Customer {
     firstName: string;
     lastName: string;
